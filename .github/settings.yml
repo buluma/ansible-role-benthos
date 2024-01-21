@@ -5,4 +5,4 @@
 repository:
   description: installs benthos
   homepage: https://buluma.github.io/
-  topics: , ansible, molecule, tox, playbook
+  topics: benthos, ansible, molecule, tox, playbook
