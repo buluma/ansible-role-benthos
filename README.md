@@ -1,6 +1,6 @@
 # Ansible role [benthos](https://galaxy.ansible.com/ui/standalone/roles/buluma/benthos/documentation)
 
-installs benthos
+Installs benthos
 
 |GitHub|Version|Issues|Pull Requests|Downloads|
 |------|-------|------|-------------|---------|
@@ -14,10 +14,25 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 ---
 - name: Converge
   hosts: all
-  tasks:
-    - name: "Include buluma.benthos"
-      include_role:
-        name: "buluma.benthos"
+  become: yes
+  gather_facts: yes
+
+  roles:
+    - role: buluma.benthos
+```
+
+The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-benthos/blob/master/molecule/default/prepare.yml):
+
+```yaml
+---
+- name: Prepare
+  hosts: all
+  become: yes
+  gather_facts: no
+
+  roles:
+    - role: buluma.bootstrap
+    - role: buluma.ca_certificates
 ```
 
 Also see a [full explanation and example](https://buluma.github.io/how-to-use-these-roles.html) on how to use these roles.
@@ -81,6 +96,15 @@ benthos_checksums:
 
 - pip packages listed in [requirements.txt](https://github.com/buluma/ansible-role-benthos/blob/master/requirements.txt).
 
+## [State of used roles](#state-of-used-roles)
+
+The following roles are used to prepare a system. You can prepare your system in another way.
+
+| Requirement | GitHub | Version |
+|-------------|--------|--------|
+|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Ansible Molecule](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-bootstrap.svg)](https://github.com/shadowwalker/ansible-role-bootstrap)|
+|[andrewrothstein.unarchivedeps](https://galaxy.ansible.com/buluma/andrewrothstein.unarchivedeps)|[![Ansible Molecule](https://github.com/buluma/andrewrothstein.unarchivedeps/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/andrewrothstein.unarchivedeps/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/andrewrothstein.unarchivedeps.svg)](https://github.com/shadowwalker/andrewrothstein.unarchivedeps)|
+|[buluma.ca_certificates](https://galaxy.ansible.com/buluma/ca_certificates)|[![Ansible Molecule](https://github.com/buluma/ansible-role-ca_certificates/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-ca_certificates/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-ca_certificates.svg)](https://github.com/shadowwalker/ansible-role-ca_certificates)|
 
 ## [Context](#context)
 
@@ -97,7 +121,6 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 |container|tags|
 |---------|----|
 |[Alpine](https://hub.docker.com/repository/docker/buluma/alpine/general)|all|
-|[Archlinux](https://hub.docker.com/repository/docker/buluma/archlinux/general)|all|
 |[Debian](https://hub.docker.com/repository/docker/buluma/debian/general)|bookworm, bullseye|
 |[EL](https://hub.docker.com/repository/docker/buluma/enterpriselinux/general)|8, 9|
 |[Fedora](https://hub.docker.com/repository/docker/buluma/fedora/general)|38, 39|
