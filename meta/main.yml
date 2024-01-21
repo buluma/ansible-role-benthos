@@ -4,7 +4,6 @@ galaxy_info:
   company: ShadowNet
   description: Installs benthos
   role_name: benthos
-  galaxy_tags: []
   license: MIT
   min_ansible_version: '1.2'
   namespace: andrewrothstein
