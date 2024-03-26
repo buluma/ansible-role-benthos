@@ -1,6 +1,6 @@
 ---
 # defaults file for benthos
-benthos_ver: 4.24.0
+benthos_ver: "4.24.0"
 
 benthos_arch_map:
   aarch64: arm64
@@ -9,7 +9,7 @@ benthos_arch_map:
   x86_64: amd64
 
 benthos_parent_install_dir: /usr/local
-benthos_mirror: https://github.com/benthosdev/benthos/releases/download
+benthos_mirror: "https://github.com/benthosdev/benthos/releases/download"
 
 benthos_checksums:
   # https://github.com/benthosdev/benthos/releases/download/v4.24.0/benthos_4.24.0_checksums.txt
