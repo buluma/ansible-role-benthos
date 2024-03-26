@@ -14,8 +14,8 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 ---
 - name: Converge
   hosts: all
-  become: yes
-  gather_facts: yes
+  become: true
+  gather_facts: true
 
   roles:
     - role: buluma.benthos
@@ -27,8 +27,8 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
 ---
 - name: Prepare
   hosts: all
-  become: yes
-  gather_facts: no
+  become: true
+  gather_facts: false
 
   roles:
     - role: buluma.bootstrap
@@ -44,7 +44,7 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 ```yaml
 ---
 # defaults file for benthos
-benthos_ver: 4.24.0
+benthos_ver: "4.24.0"
 
 benthos_arch_map:
   aarch64: arm64
@@ -53,7 +53,7 @@ benthos_arch_map:
   x86_64: amd64
 
 benthos_parent_install_dir: /usr/local
-benthos_mirror: https://github.com/benthosdev/benthos/releases/download
+benthos_mirror: "https://github.com/benthosdev/benthos/releases/download"
 
 benthos_checksums:
   # https://github.com/benthosdev/benthos/releases/download/v4.24.0/benthos_4.24.0_checksums.txt
