@@ -1,10 +1,10 @@
-# Ansible role [benthos](https://galaxy.ansible.com/ui/standalone/roles/buluma/benthos/documentation)
+# [Ansible role benthos](#ansible-role-benthos)
 
 Installs benthos
 
-|GitHub|Version|Issues|Pull Requests|Downloads|
-|------|-------|------|-------------|---------|
-|[![github](https://github.com/buluma/ansible-role-benthos/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-benthos/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-benthos.svg)](https://github.com/buluma/ansible-role-benthos/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-benthos.svg)](https://github.com/buluma/ansible-role-benthos/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-benthos.svg)](https://github.com/buluma/ansible-role-benthos/pulls/)|[![Ansible Role](https://img.shields.io/ansible/role/d/buluma/benthos)](https://galaxy.ansible.com/ui/standalone/roles/buluma/benthos/documentation)|
+|GitHub|GitLab|Downloads|Version|
+|------|------|---------|-------|
+|[![github](https://github.com/buluma/ansible-role-benthos/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-benthos/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-benthos/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-benthos)|[![downloads](https://img.shields.io/ansible/role/d/buluma/benthos)](https://galaxy.ansible.com/buluma/benthos)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-benthos.svg)](https://github.com/buluma/ansible-role-benthos/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -100,18 +100,17 @@ benthos_checksums:
 
 The following roles are used to prepare a system. You can prepare your system in another way.
 
-| Requirement | GitHub | Version |
+| Requirement | GitHub | GitLab |
 |-------------|--------|--------|
-|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Ansible Molecule](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-bootstrap.svg)](https://github.com/shadowwalker/ansible-role-bootstrap)|
-|[andrewrothstein.unarchivedeps](https://galaxy.ansible.com/buluma/andrewrothstein.unarchivedeps)|[![Ansible Molecule](https://github.com/buluma/andrewrothstein.unarchivedeps/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/andrewrothstein.unarchivedeps/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/andrewrothstein.unarchivedeps.svg)](https://github.com/shadowwalker/andrewrothstein.unarchivedeps)|
-|[buluma.ca_certificates](https://galaxy.ansible.com/buluma/ca_certificates)|[![Ansible Molecule](https://github.com/buluma/ansible-role-ca_certificates/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-ca_certificates/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-ca_certificates.svg)](https://github.com/shadowwalker/ansible-role-ca_certificates)|
+|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-bootstrap/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-bootstrap)|
+|[andrewrothstein.unarchivedeps](https://galaxy.ansible.com/buluma/andrewrothstein.unarchivedeps)|[![Build Status GitHub](https://github.com/buluma/andrewrothstein.unarchivedeps/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/andrewrothstein.unarchivedeps/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/andrewrothstein.unarchivedeps/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/andrewrothstein.unarchivedeps)|
+|[buluma.ca_certificates](https://galaxy.ansible.com/buluma/ca_certificates)|[![Build Status GitHub](https://github.com/buluma/ansible-role-ca_certificates/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-ca_certificates/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-ca_certificates/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-ca_certificates)|
 
 ## [Context](#context)
 
-This role is a part of many compatible roles. Have a look at [the documentation of these roles](https://buluma.github.io/) for further information.
+This role is part of many compatible roles. Have a look at [the documentation of these roles](https://buluma.github.io/) for further information.
 
 Here is an overview of related roles:
-
 ![dependencies](https://raw.githubusercontent.com/buluma/ansible-role-benthos/png/requirements.png "Dependencies")
 
 ## [Compatibility](#compatibility)
@@ -121,27 +120,24 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 |container|tags|
 |---------|----|
 |[Alpine](https://hub.docker.com/r/buluma/alpine)|all|
-|[Debian](https://hub.docker.com/r/buluma/debian)|bookworm, bullseye|
-|[EL](https://hub.docker.com/r/buluma/enterpriselinux)|8, 9|
-|[Fedora](https://hub.docker.com/r/buluma/fedora)|38, 39|
-|[Ubuntu](https://hub.docker.com/r/buluma/ubuntu)|focal, jammy|
+|[Debian](https://hub.docker.com/r/buluma/debian)|all|
+|[EL](https://hub.docker.com/r/buluma/enterpriselinux)|all|
+|[Fedora](https://hub.docker.com/r/buluma/fedora)|all|
+|[Ubuntu](https://hub.docker.com/r/buluma/ubuntu)|all|
 
-The minimum version of Ansible required is 1.2, tests have been done to:
+The minimum version of Ansible required is 1.2, tests have been done on:
 
 - The previous version.
 - The current version.
 - The development version.
 
-If you find issues, please register them in [GitHub](https://github.com/buluma/ansible-role-benthos/issues)
-
-## [Changelog](#changelog)
-
-[Role History](https://github.com/buluma/ansible-role-benthos/blob/master/CHANGELOG.md)
+If you find issues, please register them on [GitHub](https://github.com/buluma/ansible-role-benthos/issues).
 
 ## [License](#license)
 
-[MIT](https://github.com/buluma/ansible-role-benthos/blob/master/LICENSE)
+[MIT](https://github.com/buluma/ansible-role-benthos/blob/master/LICENSE).
 
 ## [Author Information](#author-information)
 
-[Shadow Walker](https://buluma.github.io/)
+[buluma](https://buluma.github.io/)
+
