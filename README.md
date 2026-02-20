@@ -49,7 +49,7 @@ benthos_ver: "4.24.0"
 benthos_arch_map:
   aarch64: arm64
   arm64: arm64
-  x86_32: '386'
+  x86_32: "386"
   x86_64: amd64
 
 benthos_parent_install_dir: /usr/local
@@ -57,7 +57,7 @@ benthos_mirror: "https://github.com/benthosdev/benthos/releases/download"
 
 benthos_checksums:
   # https://github.com/benthosdev/benthos/releases/download/v4.24.0/benthos_4.24.0_checksums.txt
-  '4.24.0':
+  "4.24.0":
     # https://github.com/benthosdev/benthos/releases/download/v4.24.0/benthos_4.24.0_darwin_amd64.tar.gz
     darwin_amd64: sha256:7668e213a4a4c6714657bc0c9a95ae57b0d5d11f6092d9af1b4103109c3efe85
     # https://github.com/benthosdev/benthos/releases/download/v4.24.0/benthos_4.24.0_darwin_arm64.tar.gz
