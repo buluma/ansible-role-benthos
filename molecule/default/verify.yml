@@ -8,7 +8,7 @@
     - name: Executing 'benthos --version'
       ansible.builtin.command: benthos --version
       changed_when: false
-      register: 'benthos_test_output'
+      register: "benthos_test_output"
     - name: Output from 'benthos --version'
       ansible.builtin.debug:
-        msg: '{{ benthos_test_output.stdout }}'
+        msg: "{{ benthos_test_output.stdout }}"
