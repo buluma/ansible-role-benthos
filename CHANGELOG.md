@@ -1,5 +1,9 @@
 # Changelog
 
+## [v26.6.0](https://github.com/buluma/ansible-role-benthos/tree/v26.6.0) (2026-06-14)
+
+[Full Changelog](https://github.com/buluma/ansible-role-benthos/compare/v0.1.0...v26.6.0)
+
 ## [v0.1.0](https://github.com/buluma/ansible-role-benthos/tree/v0.1.0) (2024-01-21)
 
 [Full Changelog](https://github.com/buluma/ansible-role-benthos/compare/b2539bb5c1ac03233c2066a7608b0ac12f36d8a5...v0.1.0)
