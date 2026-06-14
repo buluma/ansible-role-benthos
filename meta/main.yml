@@ -5,7 +5,7 @@ galaxy_info:
   description: Installs benthos
   role_name: benthos
   license: MIT
-  min_ansible_version: "1.2"
+  min_ansible_version: "2.12"
   namespace: buluma
   platforms:
     - name: Alpine
