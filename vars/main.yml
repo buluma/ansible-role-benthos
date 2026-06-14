@@ -1,7 +1,7 @@
 ---
 # vars file for benthos
-benthos_os: "{{ ansible_system | lower }}"
-benthos_arch: "{{ benthos_arch_map[ansible_architecture] }}"
+benthos_os: "{{ ansible_facts.system | lower }}"
+benthos_arch: "{{ benthos_arch_map[ansible_facts.architecture] }}"
 benthos_platform: "{{ benthos_os }}_{{ benthos_arch }}"
 benthos_prefix: benthos_{{ benthos_ver }}_{{ benthos_platform }}
 benthos_archive: '{{ benthos_prefix }}.{{ benthos_archive_type | default("tar.gz") }}'
